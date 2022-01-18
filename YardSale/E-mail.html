@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Hind+Siliguri:wght@400;600&family=Inter:wght@300;400&family=Montserrat:wght@100&family=Quicksand:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: 0;
+            text-decoration: none;
+        }
+
+        body{
+            font-size: 62.5%;
+            font-family:'Quicksand', sans-serif;
+        }
+        :root{
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000000;
+
+        }
+        .login{
+            width: 100%;
+            height: 100vh;;
+            display:grid;
+            place-items:center;
+            
+        }
+
+        .form-container{
+            display:grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+            justify-items: center;
+        
+        }
+
+        .form-container img{
+            width: 150px;
+            margin-bottom: 48px;
+            justify-self: center;
+            display:none;
+        }
+
+        .form-container h1{
+            font-family:'Quicksand', sans-serif;
+            font-weight: bold;
+            font-size: 1.3rem;
+            text-align: center;
+            margin-bottom: 5px;
+
+        }
+
+        .form-container p{
+            font-family:'Quicksand', sans-serif;
+            font-size: 1rem;
+            text-align: center;
+            color:var(--very-light-pink);
+            margin-bottom: 30px;
+        }
+
+        .primary-button{
+            margin-top:30px;
+            background-color: var(--hospital-green);
+            height: 50px;
+            font-family:'Quicksand', sans-serif;
+            color:var(--white);
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            border: 0;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            margin-bottom:30px;
+        }
+
+        .correo-img{
+            background-color: #f5f5f5;
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .correo-img img{
+            margin:0 auto;
+            width: 100px;
+            height: 100px;
+        }
+
+        a{
+            color:var(--hospital-green)
+        }
+
+        @media (max-width: 640px ) {
+            .form-container img{
+                display: block;
+            }
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="login">
+        <div class="form-container">
+        <img src="logos/logo_yard_sale.svg" alt="logo">
+        <h1>Email has been sent!</h1>
+        <p>Please check your inbox for instructions on how to reset the password</p>
+   
+            <span class="correo-img">
+                <img src="./icons/email.svg" alt="">
+            </span>
+
+      <button class="primary-button" >Login</button>
+        <p>Didn't receive the email?  <a href="">Resend</a> </p>
+   </div>
+</div>
+</body>
+</html>

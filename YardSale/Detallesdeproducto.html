@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Hind+Siliguri:wght@400;600&family=Inter:wght@300;400&family=Montserrat:wght@100&family=Quicksand:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+    <style>
+        :root{
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000000;}
+
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+          
+        }
+
+        body{
+            
+            text-decoration: none;
+            font-family:'Quicksand', sans-serif;
+            outline: none;
+            text-decoration: none;
+            font-size: 62.5%;
+        }
+
+        .description-menu{
+           position: absolute;
+           right: 0;
+
+        }
+
+        
+
+        .img-product{
+           position: relative;
+           width: 360px;
+           height: 360px;
+           border-radius: 20px;
+           padding: 15px;
+           object-fit: cover;
+           
+        }
+
+        .x-button{
+           position:absolute;
+           top:10px;
+           left: 10px;
+        }
+
+        .text-container{
+           align-items: center;     
+           padding: 15px;
+           font-size: 1rem;
+           width: 360px;
+        }
+
+        .second-container p:nth-child(1){
+           font-weight: bold;
+         }
+
+         .second-container p:nth-child(2){
+           color:#c0c0c0;
+        }
+
+        .second-container p:nth-child(3){
+           color:#c0c0c0;
+           margin-top: 20px;
+        }
+        .button-car{
+           width: 100%;
+           background-color: var(--hospital-green);
+           border:none;
+           border-radius: 8px;
+           color:white;
+           font-weight: bold;
+           cursor:pointer;
+           font-family:'Quicksand', sans-serif ;
+           margin-top: 80px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+   
+  
+    </style>
+</head>
+<body>
+   <aside class="description-menu">
+      <img class="x-button" src="./icons/icon_close.png" alt="">
+      <img class="img-product" src="https://cdn.pixabay.com/photo/2020/04/25/08/44/washing-machine-5089939_960_720.jpg" alt="">
+      <div class="text-container" >
+         <div class="second-container" >
+         <p>$35,00</p>
+         <p>Lavadora - secadora</p>
+         <p>Cantidad de programas: Lavadora: 9. Secadora: 3
+            Tipo de carga: Frontal
+            Filtro para pelusas: No
+            Iluminación interior: No
+            Panel touch: No</p>
+         </div>
+         <button class="button-car" >
+            <img src="./icons/bt_add_to_cart.svg" alt="">
+            add to car     
+         </button>
+      </div>
+     
+   </aside>
+
+</body>
+</html>

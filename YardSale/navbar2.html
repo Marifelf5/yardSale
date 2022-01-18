@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000000;}
+
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+
+        body{
+            font-size: 62.5%;
+            text-decoration: none;
+            font-family:'Quicksand', sans-serif;
+            outline: none;
+            text-decoration: none;
+        }
+
+        .menu{
+            display:none;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            padding: 10px;
+            border-bottom: 1px solid rgb(224, 224, 224);
+      
+        }
+
+        .nav-right,
+        .nav-left{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+          
+        }
+        
+        
+        .nav-left a {
+            text-decoration: none;
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+            color:var(--very-light-pink);
+            font-size:0.9rem;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+
+        .nav-left a:hover {
+            text-decoration: none;
+            list-style: none;
+            margin: 10px;
+            color:var(--hospital-green);
+            font-size:0.9rem;
+            border: 1px solid var(--hospital-green);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .nav-right li a{
+            text-decoration: none;
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+            color:gray;
+            font-size:0.7rem;
+        }
+
+        .car-shopping{
+            position: relative;
+        }
+
+        .nav-right .number{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            text-align: center;
+            font-size: 0.8rem;
+            top: 0px;
+            right: 0px;
+            margin: 5px;
+            background-color: var(--hospital-green);
+            border-radius: 50%;
+        }
+
+    @media (max-width: 800px){
+        .menu{
+            display:block;
+        }
+        .nav-left li{
+            display:none;
+        }
+        .nav-right a{
+            display:none;
+        }
+    }
+
+
+
+    </style>
+</head>
+
+
+
+<body>
+    <header>
+        <nav>   
+            <img class="menu" src="./icons/icon_menu.svg" alt="">  
+            <ul class="nav-left" >
+                   
+                <img src="./logos/logo_yard_sale.svg" alt="">
+                <li>
+                    <a href="">All</a>
+                </li>
+                <li>
+                    <a href="">Clothes</a>
+                </li>
+                <li>
+                    <a href="">Electronics</a>
+                </li>
+                <li>
+                    <a href="">Furniture</a>
+                </li>
+                <li>
+                    <a href="">Toys</a>
+                </li>
+                <li>
+                    <a href="">Others</a>
+                </li>
+            </ul>
+
+
+            <ul class="nav-right" >
+                <li>
+                    <a href="">marifelf5@gmail.com</a>
+                </li>
+                <li>
+                    <img class="car-shopping" src="./icons/icon_shopping_cart.svg" alt="">
+                    <div class="number" >2</div>
+                </li>
+            </ul>
+
+
+
+
+        </nav>
+    </header>
+    
+</body>
+</html>

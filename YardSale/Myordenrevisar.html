@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Hind+Siliguri:wght@400;600&family=Inter:wght@300;400&family=Montserrat:wght@100&family=Quicksand:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+
+          :root{
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --white: #FFFFFF;
+            --black: #000000;}
+
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        body{
+            text-decoration: none;
+            font-size: 62.5%;
+            list-style: none;
+            margin:0;
+            padding:0;
+            font-family:'Quicksand', sans-serif; ;
+          }
+
+          .myorder{
+              width: 100%;
+              height: 100vh;
+          }
+
+          h1{
+              margin:5px;
+              padding: 15px;
+          }
+
+          .myorder-content{
+              background: #f7f7f7;
+              border-radius: 8px;
+              padding: 10px;
+              margin: 10px;
+              font-size: 1rem;
+              display: grid;
+              grid-template-columns:  1fr 1fr;
+              line-height: 1.4rem;
+          }
+
+          .myorder-content p:nth-child(1){
+            font-weight: bold;
+            color:black;
+            font-size: 1rem;
+          }
+
+          .myorder-content p{
+            color:#C7C7C7;
+            font-size: 0.8rem;
+          }
+
+          .myorder-content .precio{
+              display: flex;
+              justify-content:right;
+              align-items: center;
+              font-weight: bold;
+              color:black;
+              font-size: 0.9rem;
+          }
+
+          .shopping-card{
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            padding: 15px;
+            align-items: center;
+            font-size: 0.8rem;
+          }
+
+         .shopping-card img{
+             width:70px;
+             height: 70px;
+             border-radius: 15px;
+             object-fit: cover;
+         }
+
+         .shopping-card p{
+             color:var(--very-light-pink);
+             font-size: 0.9rem;
+             margin-left:10px;
+         }
+
+         .shopping-card p:nth-child(3){
+             color:black;
+             font-weight: bold;
+         }
+
+         
+
+
+    </style>
+</head>
+<body>
+    <div class="myorder" >
+        <div class="myorder-container">
+            <h1>My orders</h1>
+           <div class="myorder-content">
+               <div>
+                   <p>04.05.21</p>
+                   <p>6 articles</p>
+               </div>                
+                  <p class="precio">$560,00</p>
+           </div>
+            
+           
+           
+            <div class="shopping-card">
+              <figure>
+                 <img src="https://cdn.pixabay.com/photo/2015/08/01/23/28/manicure-870857_960_720.jpg" alt="">
+               </figure>
+             <p>Round shelf</p>
+             <p>$120,00</p>
+             </div>
+            
+
+
+             <div class="shopping-card">
+                <figure>
+                   <img src="https://cdn.pixabay.com/photo/2016/10/22/20/55/makeup-brushes-1761648_960_720.jpg" alt="">
+                 </figure>
+               <p>Round shelf</p>
+               <p>$120,00</p>
+               </div>
+
+               <div class="shopping-card">
+                <figure>
+                   <img src="https://cdn.pixabay.com/photo/2019/10/18/07/28/eye-shadow-4558443_960_720.jpg" alt="">
+                 </figure>
+               <p>Round shelf</p>
+               <p>$120,00</p>
+               </div>
+
+               <div class="shopping-card">
+                <figure>
+                   <img src="https://cdn.pixabay.com/photo/2019/10/18/07/28/eye-shadow-4558444_960_720.jpg" alt="">
+                 </figure>
+               <p>Round shelf</p>
+               <p>$120,00</p>
+               </div>
+
+               <div class="shopping-card">
+                <figure>
+                   <img src="https://cdn.pixabay.com/photo/2019/03/10/22/46/cosmetics-4047422_960_720.jpg" alt="">
+                 </figure>
+               <p>Round shelf</p>
+               <p>$120,00</p>
+               </div>
+
+               <div class="shopping-card">
+                <figure>
+                   <img src="https://cdn.pixabay.com/photo/2016/05/02/17/56/lipstick-1367771_960_720.jpg" alt="">
+                 </figure>
+               <p>Round shelf</p>
+               <p>$120,00</p>
+               </div>
+             
+           
+
+
+         </div>
+    </div>
+</body>
+</html>
